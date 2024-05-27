@@ -1,0 +1,14 @@
+name: GoSec
+# Run workflow each time code is pushed to your repository.
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+
+ Gosec-run:
+  uses: skyflowapi/.github-private/.github/workflows/GoSec.yml@main
+  secrets: inherit
